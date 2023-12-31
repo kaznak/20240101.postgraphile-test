@@ -12,5 +12,8 @@
   "dependencies": {
     "dotenv": "^16.3.1",
     "postgraphile": "^4.13.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.1.1"
   }
 }
