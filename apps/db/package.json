@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gm": ". ./.env && graphile-migrate",
+    "watch": "npm run gm watch"
   },
   "keywords": [],
   "author": "",
