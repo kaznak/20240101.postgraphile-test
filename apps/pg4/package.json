@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "format": "prettier -uw ."
+    "format": "prettier -uw .",
+    "start": "DEBUG='graphile-build-pg' postgraphile"
   },
   "keywords": [],
   "author": "",
