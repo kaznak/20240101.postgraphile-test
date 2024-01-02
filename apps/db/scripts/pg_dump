@@ -1,0 +1,11 @@
+#!/bin/bash
+
+PG_VERSION=${PG_VERSION:-16}
+
+docker run --rm \
+    -v "${PWD}":/checkout \
+    -w /checkout \
+    --user "$(id -u):$(id -g)"  \
+    "postgres:${PG_VERSION}" \
+    \
+    pg_dump "$@"
