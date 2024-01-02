@@ -6,7 +6,8 @@
   "scripts": {
     "dump": ". ./.env && URL=\"${GM_DBURL:-$DATABASE_URL}\" && ./scripts/pg_dump --schema-only --no-owner --exclude-schema=graphile_migrate --file=data/schema-$(echo $URL|sha256sum|awk '{print $1}').sql $URL",
     "gm": ". ./.env && graphile-migrate",
-    "watch": "npm run gm watch"
+    "watch": "npm run gm watch",
+    "commit": "npm run gm commit"
   },
   "keywords": [],
   "author": "",
