@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dump": ". ./.env && URL=\"${GM_DBURL:-$DATABASE_URL}\" && ./scripts/pg_dump --schema-only --no-owner --exclude-schema=graphile_migrate --file=data/schema-$(echo $URL|sha256sum|awk '{print $1}').sql $URL",
+    "_dump": "./scripts/pg_dump --schema-only --no-owner --exclude-schema=graphile_migrate --file=data/schema.sql",
+    "dump": ". ./.env && npm run _dump $DATABASE_URL",
     "gm": ". ./.env && graphile-migrate",
     "watch": "npm run gm watch",
     "commit": "npm run gm commit"
