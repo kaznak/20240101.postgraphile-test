@@ -17,6 +17,48 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 --
+-- Name: app_hidden; Type: SCHEMA; Schema: -; Owner: -
+--
+
+CREATE SCHEMA app_hidden;
+
+
+--
+-- Name: SCHEMA app_hidden; Type: COMMENT; Schema: -; Owner: -
+--
+
+COMMENT ON SCHEMA app_hidden IS 'application hidden schema';
+
+
+--
+-- Name: app_private; Type: SCHEMA; Schema: -; Owner: -
+--
+
+CREATE SCHEMA app_private;
+
+
+--
+-- Name: SCHEMA app_private; Type: COMMENT; Schema: -; Owner: -
+--
+
+COMMENT ON SCHEMA app_private IS 'application private schema';
+
+
+--
+-- Name: app_public; Type: SCHEMA; Schema: -; Owner: -
+--
+
+CREATE SCHEMA app_public;
+
+
+--
+-- Name: SCHEMA app_public; Type: COMMENT; Schema: -; Owner: -
+--
+
+COMMENT ON SCHEMA app_public IS 'application public schema';
+
+
+--
 -- PostgreSQL database dump complete
 --
 
