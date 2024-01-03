@@ -9,7 +9,7 @@
   "afterAllMigrations": [
     {
       "_": "command",
-      "command": "npm run dump"
+      "command": "npm run _dump \"${GM_DBURL}\""
     }
   ],
   "afterCurrent": [
