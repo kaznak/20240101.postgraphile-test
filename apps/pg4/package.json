@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@graphile/pg-pubsub": "^4.13.0",
     "dotenv": "^16.3.1",
     "postgraphile": "^4.13.0"
   },
