@@ -9,5 +9,8 @@ module.exports = {
     // jwtSecret: process.env.JWT_SECRET,
     // jwtTokenIdentifier: "public.jwt_token",
     watch: true,
+    plugins: ["@graphile/pg-pubsub"],
+    subscription: true,
+    simpleSubscriptions: true,
   },
 };
