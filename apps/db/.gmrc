@@ -3,6 +3,7 @@
     "search_path": "app_public,app_private,app_hidden,public"
   },
   "placeholders": {
+    // Default placeholders: :DATABASE_NAME, :DATABASE_OWNER
   },
   "afterReset": [
   ],
