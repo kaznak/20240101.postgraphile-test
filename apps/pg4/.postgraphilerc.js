@@ -12,5 +12,9 @@ module.exports = {
     plugins: ["@graphile/pg-pubsub"],
     subscription: true,
     simpleSubscriptions: true,
+    //
+    pgSettings: {
+      statement_timeout: "3000",
+    },
   },
 };
